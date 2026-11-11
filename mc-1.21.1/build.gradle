@@ -1,0 +1,46 @@
+apply plugin: 'fabric-loom'
+
+version = rootProject.mod_version
+group = 'dev.reduxion'
+base { archivesName = "reduxion-mc${project.minecraft_version}" }
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(21) }
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+sourceSets {
+    main {
+        java { srcDirs += ["${rootDir}/common/src/main/java"] }
+        resources { srcDirs += ["${rootDir}/common/src/main/resources"] }
+    }
+}
+
+repositories { mavenCentral() }
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${rootProject.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+}
+
+processResources {
+    inputs.property 'version', project.version
+    inputs.property 'mc', project.minecraft_version
+    filesMatching('fabric.mod.json') {
+        expand 'version': project.version, 'mc': project.minecraft_version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach { it.options.release = 21; it.options.encoding = 'UTF-8' }
+
+
+tasks.register('dumpDeps') {
+    doLast {
+        def f = file("${buildDir}/deps.txt")
+        f.text = configurations.runtimeClasspath.files.collect { it.absolutePath }.join('\n')
+        println "WROTE ${f}"
+    }
+}

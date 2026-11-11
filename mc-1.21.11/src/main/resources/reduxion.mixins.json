@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.reduxion.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["ResourceManagerMixin", "ItemModelResolverMixin", "EquipmentLayerMixin"],
+  "injectors": { "defaultRequire": 1 }
+}

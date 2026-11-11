@@ -1,21 +1,35 @@
-MIT License
+REDUXion
+Copyright (c) 2026 Kirill_Burnside (GitHub: Kiryxaurnsadik). All rights reserved.
 
-Copyright (c) 2026 Kiryxaurnsadik
+This software, including its source code, compiled binaries, assets,
+textures, documentation and any associated files (the "Software"), is the
+proprietary property of the copyright holder.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+The Software is made publicly visible for reference only. No license or
+right is granted to any person, by implication or otherwise, except as
+expressly stated below.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Without the prior written permission of the copyright holder, you may NOT:
+  1. copy, reproduce or mirror the Software, in whole or in part;
+  2. modify, adapt, translate, or create derivative works based on it;
+  3. distribute, publish, re-upload, sublicense, sell, rent or lease it,
+     including the source code or any compiled build;
+  4. decompile, deobfuscate or reverse engineer released builds, except
+     to the extent applicable law expressly permits it;
+  5. use any part of the source code in another project;
+  6. remove or alter any copyright notice or author attribution.
+
+End users may download official releases from the copyright holder's
+official channels and run them for personal, non-commercial use in
+Minecraft. This permission does not extend to the source code.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE
+SOFTWARE OR ITS USE.
+
+Minecraft is a trademark of Mojang Synergies AB. This project is not
+affiliated with or endorsed by Mojang or Microsoft.
+
+For permission requests, contact the author via GitHub: Kiryxaurnsadik.

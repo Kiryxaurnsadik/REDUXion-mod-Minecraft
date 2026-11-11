@@ -1,0 +1,26 @@
+# Gradle / build output
+.gradle/
+build/
+**/build/
+out/
+run/
+logs/
+
+# Built mod jars and ProGuard mappings (do not commit)
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+mapping-*.txt
+mappings/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+
+# OS
+.DS_Store
+Thumbs.db

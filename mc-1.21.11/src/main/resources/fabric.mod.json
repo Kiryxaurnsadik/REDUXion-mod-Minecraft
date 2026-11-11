@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "reduxion",
+  "version": "${version}",
+  "name": "REDUXion",
+  "description": "REDUX packs: replace item models, armor textures and trims on the client, on top of any resource pack.",
+  "authors": ["Kirill_Burnside"],
+  "license": "All Rights Reserved",
+  "icon": "assets/reduxion/icon.png",
+  "environment": "client",
+  "entrypoints": { "client": ["dev.reduxion.game.ReduxionClient"] },
+  "mixins": [ { "config": "reduxion.mixins.json", "environment": "client" } ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "${mc}",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
